@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfuture_generation=self.webpackChunkfuture_generation||[]).push([[284],{284:function(e,n,r){r.r(n);var u=r(184);n.default=function(){return(0,u.jsx)("div",{children:"Partners page"})}}}]);
+//# sourceMappingURL=284.73d0c358.chunk.js.map

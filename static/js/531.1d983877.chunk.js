@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfuture_generation=self.webpackChunkfuture_generation||[]).push([[531],{531:function(e,n,u){u.r(n);var r=u(184);n.default=function(){return(0,r.jsx)("div",{children:"News page"})}}}]);
+//# sourceMappingURL=531.1d983877.chunk.js.map
