@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/future-generation/static/css/main.7acaea2f.css",
+    "main.js": "/future-generation/static/js/main.07d3183d.js",
+    "index.html": "/future-generation/index.html",
+    "main.7acaea2f.css.map": "/future-generation/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/future-generation/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
