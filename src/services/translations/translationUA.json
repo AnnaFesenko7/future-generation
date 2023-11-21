@@ -1,0 +1,17 @@
+{
+  "about": "Про фонд",
+  "news": "Новини",
+  "partners": "партнери",
+  "donation": "Швидкий донат",
+  "email": "Електронна адреса",
+  "password": "Пароль",
+  "login": "Вхід",
+  "register": "Реєстрація",
+  "signUp": "Зареєструватися",
+  "name": "Ім’я",
+  "confirmPassword": "Підтвердити пароль",
+  "alreadyHaveAnAccount": "Вже з нами?",
+  "logIn": "Увійти",
+
+  "logout": "Вихід"
+}
