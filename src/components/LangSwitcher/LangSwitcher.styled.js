@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const LangSwitcherWrapper = styled.div`
   position: relative;
+  margin-bottom: ${p => p.modal && '20px'};
 `;
 
 export const StyledLink = styled.a`

@@ -58,8 +58,8 @@ export const theme = {
   },
 
   transform: {
-    invisible: 'scale(0)',
-    full: 'scale(1)',
+    invisible: 'translateX(100%)',
+    full: 'translateX(0)',
   },
 
   media: {

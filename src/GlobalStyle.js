@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import AvenirNextCyrBold from './fonts/AvenirNextCyr-Bold.woff';
+import AvenirNextCyrLight from './fonts/AvenirNextCyr-Light.woff';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,8 +9,14 @@ body {
 @font-face {
         font-family: 'AvenirNextCyrBold';
         src: local('AvenirNextCyrBold'), 
-        url(${AvenirNextCyrBold}) format('woff');
-        /* font-weight: 700; */
+        url(${AvenirNextCyrBold}) format('woff');      
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'AvenirNextCyrLight';
+        src: local('AvenirNextCyrLight'), 
+        url(${AvenirNextCyrLight}) format('woff');
         font-style: normal;
     }
 

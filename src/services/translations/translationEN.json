@@ -3,6 +3,8 @@
   "news": "News",
   "partners": "partners",
   "donation": "Quick donation ",
+  "activities": "activities",
+
   "email": "Email",
   "password": "Password",
   "login": "Login",
@@ -12,6 +14,9 @@
   "confirmPassword": "Confirm password",
   "alreadyHaveAnAccount": "Already have an account?",
   "logIn": "Log in",
+  "logout": "Logout",
 
-  "logout": "Logout"
+  "ChF": "ChF",
+  "logoFirst": "Future",
+  "logoSecond": "Generation"
 }

@@ -3,6 +3,8 @@
   "news": "Новини",
   "partners": "партнери",
   "donation": "Швидкий донат",
+  "activities": "заходи",
+
   "email": "Електронна адреса",
   "password": "Пароль",
   "login": "Вхід",
@@ -12,6 +14,9 @@
   "confirmPassword": "Підтвердити пароль",
   "alreadyHaveAnAccount": "Вже з нами?",
   "logIn": "Увійти",
+  "logout": "Вихід",
 
-  "logout": "Вихід"
+  "ChF": "БФ",
+  "logoFirst": "Покоління",
+  "logoSecond": "Майбутнього"
 }
