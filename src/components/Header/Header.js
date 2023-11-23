@@ -57,8 +57,8 @@ export const Header = () => {
             {isDesktopDevice && (
               <HeaderContentWrapper>
                 <Navigation />
-                <StyledTel href="tel:+380963597939">
-                  +3 8 096 359 79 39
+                <StyledTel href="tel:+380967776413">
+                  +3 8 096 777 64 13
                 </StyledTel>
                 <LangSwitcher
                   onChangeLanguage={changeLanguageState}
