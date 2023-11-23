@@ -37,7 +37,7 @@ export const StyledTel = styled.a`
   &:focus {
     color: ${p => p.theme.colors.accentColor};
   }
-  margin-bottom: ${p => p.modal && '20px'};
+  margin-bottom: ${p => p.$modal && '20px'};
 `;
 
 export const DonationBtn = styled(Link)`
@@ -52,14 +52,11 @@ export const DonationBtn = styled(Link)`
 `;
 
 export const HeaderContentWrapper = styled.div`
-  display: ${p => (p.logo ? 'flex' : 'none')};
+  display: flex;
   align-items: center;
   gap: 4px;
   @media ${p => p.theme.media.tablet} {
     gap: 8px;
-  }
-  @media ${p => p.theme.media.desktop} {
-    display: flex;
   }
 `;
 export const ModalContentWrapper = styled.div`
@@ -71,7 +68,7 @@ export const ModalContentWrapper = styled.div`
 `;
 export const MenuBtn = styled.button`
   justify-self: flex-start;
-  align-self: ${p => p.modal && 'start'};
+  align-self: ${p => p.$modal && 'start'};
   background-color: transparent;
   border: 0;
 `;

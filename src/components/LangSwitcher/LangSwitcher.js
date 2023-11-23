@@ -9,7 +9,7 @@ import {
 import { ImSphere } from 'react-icons/im';
 import { BsChevronCompactDown } from 'react-icons/bs';
 
-export const LangSwitcher = ({ onChangeLanguage, currentLang, modal }) => {
+export const LangSwitcher = ({ onChangeLanguage, currentLang, $modal }) => {
   const [lang, setLang] = useState(currentLang);
   const [visible, setVisible] = useState(false);
 
@@ -20,7 +20,7 @@ export const LangSwitcher = ({ onChangeLanguage, currentLang, modal }) => {
   }, [lang, onChangeLanguage]);
 
   return (
-    <LangSwitcherWrapper modal={modal}>
+    <LangSwitcherWrapper $modal={$modal}>
       <StyledLink onClick={() => setVisible(true)}>
         <ImSphere size={30} />
         <StyledSpan lang={lang}>{lang === 'en' ? 'En' : 'Ua'}</StyledSpan>

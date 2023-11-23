@@ -8,9 +8,6 @@ export const StyledContainer = styled.div`
   width: ${p => p.theme.mediaWidth.mobile}px;
   display: flex;
   flex-direction: column;
-  /* background-color: ${p =>
-    p.header ? p.theme.colors.header : p.theme.colors.backgroundBody}; */
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 
   @media ${p => p.theme.media.tablet} {
     width: ${p => p.theme.mediaWidth.tablet}px;

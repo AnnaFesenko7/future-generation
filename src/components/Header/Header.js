@@ -27,7 +27,7 @@ import {
 export const Header = () => {
   // const isMobileDevice = useMediaQuery({ query: '(max-width: 767px)' });
   const isDesktopDevice = useMediaQuery({ query: '(min-width: 1280px)' });
-  const { isModalOpen, toggleModal } = useModal();
+  const { isModalOpen, closeModal, openModal } = useModal();
   const [currentLang, setCurrentLang] = useState('ua');
 
   const changeLanguageState = language => {
@@ -42,11 +42,11 @@ export const Header = () => {
   return (
     <>
       <StyledHeader>
-        <StyledContainer header>
+        <StyledContainer>
           <FlexBox>
-            <HeaderContentWrapper logo>
+            <HeaderContentWrapper>
               {!isDesktopDevice && (
-                <MenuBtn type="button" onClick={toggleModal}>
+                <MenuBtn type="button" onClick={openModal}>
                   <BiMenu size={30} />
                 </MenuBtn>
               )}
@@ -54,35 +54,40 @@ export const Header = () => {
                 <Logo />
               </LogoLink>
             </HeaderContentWrapper>
-            <HeaderContentWrapper>
-              <Navigation />
-              <StyledTel href="tel:+380963597939">+3 8 096 359 79 39</StyledTel>
-              <LangSwitcher
-                onChangeLanguage={changeLanguageState}
-                currentLang={currentLang}
-              />
-            </HeaderContentWrapper>
+            {isDesktopDevice && (
+              <HeaderContentWrapper>
+                <Navigation />
+                <StyledTel href="tel:+380963597939">
+                  +3 8 096 359 79 39
+                </StyledTel>
+                <LangSwitcher
+                  onChangeLanguage={changeLanguageState}
+                  currentLang={currentLang}
+                />
+              </HeaderContentWrapper>
+            )}
+
             <DonationBtn to="/donation">{t('donation')}</DonationBtn>
           </FlexBox>
         </StyledContainer>
       </StyledHeader>
 
-      <Modal active={isModalOpen} closeModal={toggleModal}>
+      <Modal active={isModalOpen} closeModal={closeModal}>
         <StyledContainer>
           <ModalContentWrapper>
-            <MenuBtn modal type="button" onClick={toggleModal}>
+            <MenuBtn $modal type="button" onClick={closeModal}>
               <BsXLg size={30} />
             </MenuBtn>
             <LogoLink to="/">
               <Logo />
             </LogoLink>
 
-            <Navigation modal />
-            <StyledTel modal href="tel:+380963597939">
+            <Navigation $modal closeModal={closeModal} />
+            <StyledTel $modal href="tel:+380963597939">
               +3 8 096 359 79 39
             </StyledTel>
             <LangSwitcher
-              modal
+              $modal
               onChangeLanguage={changeLanguageState}
               currentLang={currentLang}
             />

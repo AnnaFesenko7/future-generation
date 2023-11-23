@@ -7,8 +7,8 @@ export const StyledNav = styled.nav`
   gap: ${p => p.theme.space[5]}px;
   cursor: pointer;
 
-  flex-direction: ${p => (p.modal ? 'column' : 'row')};
-  margin: ${p => p.modal && '40px'};
+  flex-direction: ${p => (p.$modal ? 'column' : 'row')};
+  margin: ${p => p.$modal && '40px'};
 
   text-transform: uppercase;
   font-family: 'AvenirNextCyrBold';

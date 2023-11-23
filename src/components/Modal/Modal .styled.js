@@ -11,8 +11,8 @@ export const BackDropModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: ${p => (p.active ? 1 : 0)};
-  pointer-events: ${p => (p.active ? 'all' : 'none')};
+  opacity: ${p => (p.$active ? 1 : 0)};
+  pointer-events: ${p => (p.$active ? 'all' : 'none')};
   transition: 0.5s;
 `;
 
@@ -24,6 +24,6 @@ export const ModalContent = styled.div`
   flex-direction: column;
   align-items: center;
   transform: ${p =>
-    p.active ? p.theme.transform.full : p.theme.transform.invisible};
+    p.$active ? p.theme.transform.full : p.theme.transform.invisible};
   transition: 0.5s;
 `;
