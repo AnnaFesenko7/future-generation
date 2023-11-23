@@ -25,7 +25,7 @@ import {
 } from './Header.styled';
 
 export const Header = () => {
-  // const isMobileDevice = useMediaQuery({ query: '(max-width: 767px)' });
+  const isMobileDevice = useMediaQuery({ query: '(max-width: 767px)' });
   const isDesktopDevice = useMediaQuery({ query: '(min-width: 1280px)' });
   const { isModalOpen, closeModal, openModal } = useModal();
   const [currentLang, setCurrentLang] = useState('ua');
@@ -66,8 +66,9 @@ export const Header = () => {
                 />
               </HeaderContentWrapper>
             )}
-
-            <DonationBtn to="/donation">{t('donation')}</DonationBtn>
+            {!isMobileDevice && (
+              <DonationBtn to="/donation">{t('donation')}</DonationBtn>
+            )}
           </FlexBox>
         </StyledContainer>
       </StyledHeader>
