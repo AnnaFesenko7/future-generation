@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfuture_generation=self.webpackChunkfuture_generation||[]).push([[721],{721:function(e,n,t){t.r(n);var u=t(184);n.default=function(){return(0,u.jsx)("div",{children:"Activities page"})}}}]);
+//# sourceMappingURL=721.0bd859a7.chunk.js.map
