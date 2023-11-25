@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 // import { Modal } from 'components/Modal/Modal';
 // import { useModal } from 'hooks/useModal';
 import { Header } from 'components/Header/Header';
+import { Footer } from 'components/Footer/Footer';
 
 export const Layout = () => {
   // const isLoggedIn = useSelector(isLoggedInSelector);
@@ -17,6 +18,7 @@ export const Layout = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
+      <Footer />
     </>
   );
 };

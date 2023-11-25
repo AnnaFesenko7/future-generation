@@ -10,6 +10,7 @@ const News = lazy(() => import('pages/News'));
 const Partners = lazy(() => import('pages/Partners'));
 const Donation = lazy(() => import('pages/Donation'));
 const Activities = lazy(() => import('pages/Activities'));
+const PrivacyPolicy = lazy(() => import('pages/PrivacyPolicy'));
 
 export const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ export const App = () => {
           <Route path="partners" element={<Partners />} />
           <Route path="activities" element={<Activities />} />
           <Route path="donation" element={<Donation />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
 
           {/* <Route path="/login" element={<LoginPage />} />
 

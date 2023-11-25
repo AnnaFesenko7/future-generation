@@ -6,6 +6,8 @@ export const theme = {
     backgroundBody: '#f7fcf9',
     accentColor: '#0090d7',
     tel: '#1925ff',
+    footerTop: '#292929',
+    footerBottom: '#121212',
   },
 
   fontSizes: {
