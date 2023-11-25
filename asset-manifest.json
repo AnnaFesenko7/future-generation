@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/future-generation/static/css/main.cd2e038f.css",
-    "main.js": "/future-generation/static/js/main.fa69e882.js",
-    "static/js/266.00bd5d7e.chunk.js": "/future-generation/static/js/266.00bd5d7e.chunk.js",
+    "main.js": "/future-generation/static/js/main.4666ad95.js",
+    "static/js/32.64ab8fa4.chunk.js": "/future-generation/static/js/32.64ab8fa4.chunk.js",
     "static/js/964.9966846a.chunk.js": "/future-generation/static/js/964.9966846a.chunk.js",
     "static/js/531.1d983877.chunk.js": "/future-generation/static/js/531.1d983877.chunk.js",
     "static/js/284.73d0c358.chunk.js": "/future-generation/static/js/284.73d0c358.chunk.js",
     "static/js/1.343e8a75.chunk.js": "/future-generation/static/js/1.343e8a75.chunk.js",
     "static/js/721.0bd859a7.chunk.js": "/future-generation/static/js/721.0bd859a7.chunk.js",
     "static/media/Icon PM.svg": "/future-generation/static/media/Icon PM.782fd32b11f7de6cdad140ace3bcdaf8.svg",
+    "static/media/2.jpg": "/future-generation/static/media/2.cf0a1926e238718a77c1.jpg",
+    "static/media/3.jpg": "/future-generation/static/media/3.db472e6575af260d70e8.jpg",
+    "static/media/1.jpg": "/future-generation/static/media/1.70509ebb7c574c5d935c.jpg",
     "static/media/AvenirNextCyr-Light.woff": "/future-generation/static/media/AvenirNextCyr-Light.3f6e7c61ac79c0709a74.woff",
     "static/media/AvenirNextCyr-Bold.woff": "/future-generation/static/media/AvenirNextCyr-Bold.93c051e6b3c9fc42526b.woff",
     "index.html": "/future-generation/index.html",
     "static/media/getFetch.cjs": "/future-generation/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.cd2e038f.css.map": "/future-generation/static/css/main.cd2e038f.css.map",
-    "main.fa69e882.js.map": "/future-generation/static/js/main.fa69e882.js.map",
-    "266.00bd5d7e.chunk.js.map": "/future-generation/static/js/266.00bd5d7e.chunk.js.map",
+    "main.4666ad95.js.map": "/future-generation/static/js/main.4666ad95.js.map",
+    "32.64ab8fa4.chunk.js.map": "/future-generation/static/js/32.64ab8fa4.chunk.js.map",
     "964.9966846a.chunk.js.map": "/future-generation/static/js/964.9966846a.chunk.js.map",
     "531.1d983877.chunk.js.map": "/future-generation/static/js/531.1d983877.chunk.js.map",
     "284.73d0c358.chunk.js.map": "/future-generation/static/js/284.73d0c358.chunk.js.map",
@@ -24,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.fa69e882.js"
+    "static/js/main.4666ad95.js"
   ]
 }
