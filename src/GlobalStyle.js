@@ -28,6 +28,8 @@ body {
   font-style: normal;
   
 
+  background-color: ${p => p.theme.colors.backgroundBody};
+
   }
 
 
