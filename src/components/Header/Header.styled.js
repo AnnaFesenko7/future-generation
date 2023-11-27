@@ -11,17 +11,11 @@ export const FlexBox = styled.div`
   text-transform: uppercase;
   font-family: 'AvenirNextCyrBold';
   font-size: 16px;
-  /* @media ${p => p.theme.media.tablet} {
-    font-size: 12px;
-  }
-
-  @media ${p => p.theme.media.desktop} {
-    font-size: 16px;
-  } */
 `;
 
 export const LogoLink = styled(Link)`
-  text-align: center;
+  /* text-align: center; */
+  color: ${p => p.theme.colors.black};
 `;
 
 export const StyledHeader = styled.header`

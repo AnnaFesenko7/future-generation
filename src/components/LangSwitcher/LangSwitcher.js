@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   StyledLink,
   StyledSpan,
@@ -10,32 +10,29 @@ import { ImSphere } from 'react-icons/im';
 import { BsChevronCompactDown } from 'react-icons/bs';
 
 export const LangSwitcher = ({ onChangeLanguage, currentLang, $modal }) => {
-  const [lang, setLang] = useState(currentLang);
   const [visible, setVisible] = useState(false);
 
   const options = ['ua', 'en'];
-
-  useEffect(() => {
-    onChangeLanguage(lang);
-  }, [lang, onChangeLanguage]);
 
   return (
     <LangSwitcherWrapper $modal={$modal}>
       <StyledLink onClick={() => setVisible(true)}>
         <ImSphere size={30} />
-        <StyledSpan lang={lang}>{lang === 'en' ? 'En' : 'Ua'}</StyledSpan>
+        <StyledSpan lang={currentLang}>
+          {currentLang === 'en' ? 'En' : 'Ua'}
+        </StyledSpan>
         <BsChevronCompactDown />
       </StyledLink>
       {visible && (
         <Dropdown>
           {options
-            .filter(option => option !== lang)
+            .filter(option => option !== currentLang)
             .map(option => {
               return (
                 <StyledItem
                   key={option}
                   onClick={() => {
-                    setLang(option);
+                    onChangeLanguage(option);
                     setVisible(false);
                   }}
                 >
