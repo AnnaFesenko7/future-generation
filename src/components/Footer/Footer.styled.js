@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 
 export const FooterStyled = styled.footer`
   color: ${p => p.theme.colors.white};
+
+  font-size: 8px;
+  @media ${p => p.theme.media.tablet} {
+    font-size: 12px;
+  }
+
+  @media ${p => p.theme.media.desktop} {
+    font-size: 16px;
+  }
 `;
 
 export const FooterTop = styled.div`
@@ -23,15 +32,6 @@ export const FooterTopWrapper = styled.div`
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-
-  /* font-size: 8px; */
-  @media ${p => p.theme.media.tablet} {
-    font-size: 12px;
-  }
-
-  @media ${p => p.theme.media.desktop} {
-    font-size: 16px;
-  }
 `;
 
 export const LogoLink = styled(Link)`

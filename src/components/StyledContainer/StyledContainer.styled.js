@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const StyledContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
   width: ${p => p.theme.mediaWidth.mobile}px;
   display: flex;
   flex-direction: column;

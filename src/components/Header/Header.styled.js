@@ -10,7 +10,14 @@ export const FlexBox = styled.div`
   gap: 16px;
   text-transform: uppercase;
   font-family: 'AvenirNextCyrBold';
-  font-size: 16px;
+  font-size: 8px;
+  @media ${p => p.theme.media.tablet} {
+    font-size: 12px;
+  }
+
+  @media ${p => p.theme.media.desktop} {
+    font-size: 16px;
+  }
 `;
 
 export const LogoLink = styled(Link)`

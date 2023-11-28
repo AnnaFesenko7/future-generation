@@ -12,5 +12,4 @@ export const StyledNav = styled.nav`
 
   text-transform: uppercase;
   font-family: 'AvenirNextCyrBold';
-  font-size: 16px;
 `;

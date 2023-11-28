@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const LogoText = styled.div`
   font-family: 'AvenirNextCyrBold';
   text-transform: uppercase;
-  /* color: ${p => p.theme.colors.black}; */
 `;
 export const LogoWrapper = styled.div`
   display: flex;
@@ -11,7 +10,10 @@ export const LogoWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   img {
-    width: 55px;
+    width: 30px;
+    @media ${p => p.theme.media.tablet} {
+      width: 55px;
+    }
   }
 `;
 
